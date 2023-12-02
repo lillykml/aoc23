@@ -1,3 +1,5 @@
+############ Part 1 ##################
+
 rounds = {}
 result = 0
 cubes = {"red": 12, "green": 13, "blue": 14}
@@ -36,6 +38,4 @@ with open('input.txt', 'r') as f:
         rounds[key] = games
         if possible: result+=int(key.split()[1])
 
-
-print(rounds)
 print(result)
