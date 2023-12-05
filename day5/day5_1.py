@@ -59,6 +59,9 @@ def convert(mapping, value, parsed_data):
     return value
 
 
+
+
+
 ################# Main Part 1 ######################
 with open("input.txt", 'r') as file:
     file_content = file.readlines()
