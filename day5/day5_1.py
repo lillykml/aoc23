@@ -9,7 +9,7 @@ def parse_and_sort_data(lines):
         if 'seeds' in line:
             (key, value) = line.split(':')
             values = [int(num) for num in value.strip().split()]
-            data_dict[key] = values
+            data_dict[key] = values # Part 1
 
         # Check if line is a key (contains ':')
         elif ':' in line:
@@ -57,9 +57,6 @@ def convert(mapping, value, parsed_data):
         if ratio[1] <= value <= (ratio[1] + ratio[2]-1):
             return (value - ratio[1]+ ratio[0])
     return value
-
-
-
 
 
 ################# Main Part 1 ######################
